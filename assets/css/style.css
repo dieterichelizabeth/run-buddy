@@ -58,14 +58,26 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* This section contains the background photo and correct padding for the website.*/
+/* However, it applies the background to ALL SECTIONS...*/
+/* Logically, shouldn't the image be placed only in the hero section?*/
+/* Removing background-image from this section removed it from the page completely */
+/* Need to find a way to apply background to only "hero" section.*/
+/* Changing "section" to ".hero" removes the background image compeltely as well...*/
+/* Ended up removing the background-image element anyway. Now only "hero" section has*/
+/* Removing padding eliminates appropriate spacing of sections (duh)*/
+/* Need to find a way to remove padding from hero image*/
+
 section {
   padding: 60px;
-  background-image: url("../images/hero-bg.jpeg");
 }
+
+/* Removing the background-image from this section messes up the format of the photo*/
+/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
 
 /* Hero Style Start */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.jpeg");
   height: 600px;
 }
 /* Hero Style End */
