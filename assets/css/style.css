@@ -67,14 +67,14 @@ body {
 /* Ended up removing the background-image element anyway. Now only "hero" section has*/
 /* Removing padding eliminates appropriate spacing of sections (duh)*/
 /* Need to find a way to remove padding from hero image*/
+/* Removing the background-image from this hero section messes up the format of the photo*/
+/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
+/* Changing the padding for hero section changes text spacing- not image spacing */
+/* Incorrect formatting of section in HTML- problem solved.*/
 
 section {
   padding: 60px;
 }
-
-/* Removing the background-image from this section messes up the format of the photo*/
-/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
-/* Changing the padding for hero section changes text spacing- not image spacing */
 
 /* Hero Style Start */
 .hero {
@@ -84,9 +84,6 @@ section {
   background-position: center;
 }
 
-/* We are supposed to use absolute positioning w/ bottom 120px, and right 140px */
-/* However, this code puts the sign up for in the correct place? */
-/* Refer to module 1.3 */
 .hero-form {
   background-color: #fce138;
   padding: 20px;
@@ -94,8 +91,8 @@ section {
   color: #024e76;
   border: solid 3px #024e76;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 120px;
+  right: 140px;
 }
 
 .hero-form h3 {
