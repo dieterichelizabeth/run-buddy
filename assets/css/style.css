@@ -74,11 +74,14 @@ section {
 
 /* Removing the background-image from this section messes up the format of the photo*/
 /* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
+/* Changing the padding for hero section changes text spacing- not image spacing */
 
 /* Hero Style Start */
 .hero {
   background-image: url("../images/hero-bg.jpeg");
   height: 600px;
+  background-size: cover;
+  background-position: center;
 }
 /* Hero Style End */
 
