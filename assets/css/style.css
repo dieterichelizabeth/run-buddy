@@ -55,6 +55,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Problem: Image applied to wrong section */
 /* This section contains the background photo and correct padding for the website.*/
 /* However, it applies the background to ALL SECTIONS...*/
 /* Logically, shouldn't the image be placed only in the hero section?*/
@@ -247,6 +248,39 @@ section {
 .contact h2 {
   color: #fce138;
 }
+
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
+}
+
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #fce138;
+}
+
+/* End Reach out styles */
 
 footer {
   background: #fce138;
