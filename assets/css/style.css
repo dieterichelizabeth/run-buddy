@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-/* apply styles to <header> */
+body {
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* APPLY STYLES TO HEADER / NAV */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -42,46 +47,14 @@ header h1 {
   color: #fce138;
   margin: 0;
 }
+/* END STYLES TO HEADER / NAV */
 
-/* Potential duplicate */
-
-header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  color: #fce138;
-  margin: 0;
-}
-/* End apply styles to <header> */
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  color: #39a6b2;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* Problem: Image applied to wrong section */
-/* This section contains the background photo and correct padding for the website.*/
-/* However, it applies the background to ALL SECTIONS...*/
-/* Logically, shouldn't the image be placed only in the hero section?*/
-/* Removing background-image from this section removed it from the page completely */
-/* Need to find a way to apply background to only "hero" section.*/
-/* Changing "section" to ".hero" removes the background image compeltely as well...*/
-/* Ended up removing the background-image element anyway. Now only "hero" section has*/
-/* Removing padding eliminates appropriate spacing of sections (duh)*/
-/* Need to find a way to remove padding from hero image*/
-/* Removing the background-image from this hero section messes up the format of the photo*/
-/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
-/* Changing the padding for hero section changes text spacing- not image spacing */
-/* Incorrect formatting of section in HTML- problem solved.*/
-
+/* APPLY STYLES TO ALL SECTIONS*/
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* APPLY STYLES TO HERO */
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
@@ -89,6 +62,21 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
@@ -130,30 +118,12 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
-/* Hero Style End */
+/* END APPLY STYLES TO HEADER */
 
-/* Begin Call to Action*/
-.hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
-}
-/* End Call to Action*/
-
-/* Begin Section heading styling */
+/* APPLY HEADING SECTION STYLING */
 .section-title {
   font-size: 55px;
   color: #024e76;
-  padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
   padding-bottom: 20px;
   text-align: center;
@@ -177,13 +147,12 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+/* END STYLES TO HEADING SECTION */
 
+/* APPLY STYLING WHAT YOU DO */
 .steps {
   background: #fce138;
 }
-/* End Section heading styling */
-
-/* Begin sizing elements what you do */
 
 .step h3 {
   color: #024e76;
@@ -232,11 +201,9 @@ section {
 .step-text {
   flex: 12;
 }
-/* End styling elements what-you-do */
+/* END STYLING WHAT YOU DO */
 
-/* Begin styling Meet the Trainers */
-
-/* What am I missing from here?*/
+/* APPLY STYLING MEET THE TRAINERS */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -247,7 +214,7 @@ section {
 
 .trainer {
   flex: 1;
-  margin: 0 auto 30px auto;
+  margin: 20px;
   background: #024e76;
   color: #fce138;
 }
@@ -259,14 +226,6 @@ section {
 .trainer-bio {
   padding: 25px;
   line-height: 1.3;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .trainer-bio h3 {
@@ -282,9 +241,9 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
-/* End styling Meet the Trainers */
+/* END STYLES TO MEET THE TRAINERS */
 
-/* Begin Reach out styles */
+/* APPLY REACH OUT STYLES */
 .contact {
   background: #024e76;
 }
@@ -349,9 +308,9 @@ section {
   padding: 15px;
   font-size: 16px;
 }
+/* END STYLES TO REACH OUT */
 
-/* End Reach out styles */
-
+/* APPLY STYLES TO FOOTER */
 footer {
   background: #fce138;
   width: 100%;
@@ -374,9 +333,33 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END STYLES TO FOOTER */
 
-/* Begin Utility classes*/
+/* UTILITIES*/
 .flex-row {
   display: flex;
 }
-/* End Utility classes*/
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* NOTES /
+/* Problem: Image applied to wrong section */
+/* This section contains the background photo and correct padding for the website.*/
+/* However, it applies the background to ALL SECTIONS...*/
+/* Logically, shouldn't the image be placed only in the hero section?*/
+/* Removing background-image from this section removed it from the page completely */
+/* Need to find a way to apply background to only "hero" section.*/
+/* Changing "section" to ".hero" removes the background image compeltely as well...*/
+/* Ended up removing the background-image element anyway. Now only "hero" section has*/
+/* Removing padding eliminates appropriate spacing of sections (duh)*/
+/* Need to find a way to remove padding from hero image*/
+/* Removing the background-image from this hero section messes up the format of the photo*/
+/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
+/* Changing the padding for hero section changes text spacing- not image spacing */
+/* Incorrect formatting of section in HTML- problem solved.*/
