@@ -1,20 +1,14 @@
 # Run Buddy, Inc
 
-## Purpose
+Module Project: "Run Buddy" is a business, offering/fitness training services, in need of a new website.
+This project was built with HTML and CSS and features media queries/flex box to create a mobile-responsive layout with attractive and intuitive user interface.
 
-A website that offers fitness training services.
+Click here to [view the project](https://dieterichelizabeth.github.io/run-buddy/)
 
-## Built With
+# Screenshots
 
-- HTML
-- CSS
+![Desktop](https://user-images.githubusercontent.com/95142863/153802143-cb797308-c1da-4322-8e87-3d96b2b94358.png)
 
-## Website
+![Mobile](https://user-images.githubusercontent.com/95142863/153802333-223864ca-17f9-47da-b2b5-ce962d37f8da.png)
 
-https://lernantino.github.io/run-buddy/
-
-## Contribution
-
-Made with ❤️ by [your name]
-
-### ©️2019 Run Buddy, Inc
+©️2019 Run Buddy, Inc
