@@ -470,6 +470,7 @@ footer a {
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
@@ -518,10 +519,10 @@ footer a {
   .contact-info iframe {
     flex: 1 100%;
   }
-  /* this will be applied on any screen smaller than 980px */
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* applied on any screen between 768px and 575px */
 @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
@@ -548,10 +549,10 @@ footer a {
   .step-text {
     flex: 100%;
   }
-  /* this will be applied on any screen between 768px and 575px */
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* applied on any screen smaller than 575px */
 @media screen and (max-width: 575px) {
   .hero-form button {
     width: 100%;
@@ -580,21 +581,4 @@ footer a {
   .contact-form {
     order: 3;
   }
-  /* this will be applied on any screen smaller than 575px */
 }
-
-/* NOTES /
-/* Problem: Image applied to wrong section */
-/* This section contains the background photo and correct padding for the website.*/
-/* However, it applies the background to ALL SECTIONS...*/
-/* Logically, shouldn't the image be placed only in the hero section?*/
-/* Removing background-image from this section removed it from the page completely */
-/* Need to find a way to apply background to only "hero" section.*/
-/* Changing "section" to ".hero" removes the background image compeltely as well...*/
-/* Ended up removing the background-image element anyway. Now only "hero" section has*/
-/* Removing padding eliminates appropriate spacing of sections (duh)*/
-/* Need to find a way to remove padding from hero image*/
-/* Removing the background-image from this hero section messes up the format of the photo*/
-/* Replacing the background-image w/ the .hero brackets deletes the photo completely*/
-/* Changing the padding for hero section changes text spacing- not image spacing */
-/* Incorrect formatting of section in HTML- problem solved.*/
